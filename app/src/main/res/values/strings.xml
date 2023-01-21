@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JetPackCompose_Guide</string>
+    <string name="title_activity_simple_text">SimpleText</string>
+    <string name="title_activity_input_text">InputTextActivity</string>
+</resources>
