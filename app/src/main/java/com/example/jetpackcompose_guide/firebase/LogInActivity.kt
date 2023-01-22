@@ -1,4 +1,4 @@
-package com.example.jetpackcompose_guide
+package com.example.jetpackcompose_guide.firebase
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,6 +9,9 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Lock
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -78,7 +81,7 @@ fun LogIn() {
                     fontSize = 20.sp,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(bottom = 20.dp)
+                        .padding(bottom = 70.dp)
                 )
                 var emailid by remember {
                     mutableStateOf("")
@@ -87,6 +90,9 @@ fun LogIn() {
                     value = emailid,
                     onValueChange = {
                         emailid = it
+                    },
+                    leadingIcon = {
+                        Icon(Icons.Default.Email, contentDescription = "email")
                     },
                     label = { Text(text = "Enter your EmailId") },
                     modifier = Modifier
@@ -101,6 +107,9 @@ fun LogIn() {
                     value = password,
                     onValueChange = {
                         password = it
+                    },
+                    leadingIcon = {
+                        Icon(Icons.Default.Lock, contentDescription = "person")
                     },
                     label = { Text(text = "Enter your Password") },
                     modifier = Modifier
