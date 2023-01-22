@@ -1,4 +1,4 @@
-package com.example.jetpackcompose_guide
+package com.example.jetpackcompose_guide.core
 
 import android.content.res.Configuration
 import android.graphics.drawable.Drawable
