@@ -12,6 +12,11 @@
         android:theme="@style/Theme.JetPackCompose_Guide"
         tools:targetApi="31">
         <activity
+            android:name=".Buttons"
+            android:exported="false"
+            android:label="@string/title_activity_buttons"
+            android:theme="@style/Theme.JetPackCompose_Guide" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false"
             android:label="@string/title_activity_sign_up"

@@ -103,9 +103,6 @@ fun SignUp() {
                 var password by remember {
                     mutableStateOf("")
                 }
-                val passwordVisibility by remember {
-                    mutableStateOf(false)
-                }
                 OutlinedTextField(
                     value = password,
                     onValueChange = {
