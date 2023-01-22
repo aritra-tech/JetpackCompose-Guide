@@ -12,6 +12,11 @@
         android:theme="@style/Theme.JetPackCompose_Guide"
         tools:targetApi="31">
         <activity
+            android:name=".LogInActivity"
+            android:exported="false"
+            android:label="@string/title_activity_log_in"
+            android:theme="@style/Theme.JetPackCompose_Guide" />
+        <activity
             android:name=".RecyclerViewActivity"
             android:exported="false"
             android:label="@string/title_activity_recycler_view"
