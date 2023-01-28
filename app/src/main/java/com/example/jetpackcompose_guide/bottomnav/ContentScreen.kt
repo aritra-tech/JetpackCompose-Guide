@@ -42,7 +42,7 @@ fun HomeScreenPreview() {
 }
 
 @Composable
-fun MusicScreen() {
+fun CartScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -50,7 +50,7 @@ fun MusicScreen() {
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
-            text = "Music View",
+            text = "Cart View",
             fontWeight = FontWeight.Bold,
             color = Color.White,
             modifier = Modifier.align(Alignment.CenterHorizontally),
@@ -62,59 +62,8 @@ fun MusicScreen() {
 
 @Preview(showBackground = true)
 @Composable
-fun MusicScreenPreview() {
-    MusicScreen()
-}
-
-@Composable
-fun MoviesScreen() {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.Black)
-            .wrapContentSize(Alignment.Center)
-    ) {
-        Text(
-            text = "Movies View",
-            fontWeight = FontWeight.Bold,
-            color = Color.White,
-            modifier = Modifier.align(Alignment.CenterHorizontally),
-            textAlign = TextAlign.Center,
-            fontSize = 25.sp
-        )
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun MoviesScreenPreview() {
-    MoviesScreen()
-}
-
-
-@Composable
-fun BooksScreen() {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.Black)
-            .wrapContentSize(Alignment.Center)
-    ) {
-        Text(
-            text = "Books View",
-            fontWeight = FontWeight.Bold,
-            color = Color.White,
-            modifier = Modifier.align(Alignment.CenterHorizontally),
-            textAlign = TextAlign.Center,
-            fontSize = 25.sp
-        )
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun BooksScreenPreview() {
-    BooksScreen()
+fun CartScreenPreview() {
+    CartScreen()
 }
 
 @Composable
