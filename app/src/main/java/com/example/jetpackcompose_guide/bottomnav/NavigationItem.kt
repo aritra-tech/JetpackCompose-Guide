@@ -10,6 +10,6 @@ import com.example.jetpackcompose_guide.R
 sealed class NavigationItem(var route: String, var icon: Int, var title: String) {
 
     object Home : NavigationItem("home", R.drawable.home, "Home")
-    object Music : NavigationItem("cart", R.drawable.cart, "Music")
+    object Music : NavigationItem("cart", R.drawable.cart, "Cart")
     object Profile : NavigationItem("profile", R.drawable.person, "Profile")
 }

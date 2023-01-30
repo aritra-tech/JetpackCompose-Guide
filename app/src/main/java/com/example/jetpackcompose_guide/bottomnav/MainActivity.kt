@@ -59,7 +59,7 @@ fun Navigation(navController: NavHostController) {
             HomeScreen()
         }
         composable(NavigationItem.Music.route) {
-            MusicScreen()
+            CartScreen()
         }
         composable(NavigationItem.Profile.route) {
             ProfileScreen()
